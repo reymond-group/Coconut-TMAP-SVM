@@ -26,7 +26,7 @@ Please note that **when using MAP4 for machine learning a custom kernel (or a cu
  
 The class weights were inversely proportional to the class frequency, and the hyperparameter C was optimized using 5-fold cross-validation. During the hyperparameter optimization, 20% of the training set was left out as a validation set, and the balanced accuracy of the validation set was maximized. The hyperparameter C was optimized among the values 0.1,1, 10, 100, and 1000, resulting in C = 1.  
 The classifier was implemented using [scikit-learn](https://scikit-learn.org/) with the “one versus rest” strategy. 
-After the evaluation process, a second version of the MAP4 SVM classifier was trained using both training and test to learn from all curated 60 thousand datapoints. This version of the MAP4 SVM classifier can be use at the webpage: 
+After the evaluation process, a second version of the MAP4 SVM classifier was trained using both training and test to learn from all curated 60 thousand datapoints. This version of the MAP4 SVM classifier can be use [here](https://np-svm-map4.gdb.tools/).
 
 
 ### 3. The COCONUT microbial and plants natural products MAP4 TMAP
