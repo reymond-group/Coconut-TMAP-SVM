@@ -8,8 +8,8 @@
 
 ### 1. Properties Calculation
 The February 2021 version of the [COCONUT](https://coconut.naturalproducts.net/) was downloaded. 
-the 60,171 COCONUT entries with a publication source and annotated as fungal, bacterial, or plant NPs were extracted.
-MW, fraction of sp3 C, hydrogen bond donor (HBD) and acceptor (HBA) count, calculated logP with the Crippen method (AlogP), number of carbons, oxygen, and nitrogens, total number of atoms, number of bonds, and topological polar surface area (TPSA) were calculated using [RDKit](https://www.rdkit.org/). 
+the 60,171 COCONUT entries with a publication source and annotated as fungal, bacterial, or plant NPs were extracted. Number of carbons, oxygen, and nitrogens, total number of atoms, number of bonds were extracted from the DB. 
+MW, fraction of sp3 C, hydrogen bond donor (HBD) and acceptor (HBA) count, calculated logP with the Crippen method (AlogP), and topological polar surface area (TPSA) were calculated using [RDKit](https://www.rdkit.org/). 
 To identify glycosylated and/or peptidic structures [Daylight SMARTS language](https://www.daylight.com/dayhtml/doc/theory/theory.smarts.html) was used. 
 Molecules that violated more than one Lipinski rule were labeled as non-Lipinski. 
 The [MAP4 fingerprint](https://github.com/reymond-group/map4) was calculated in 1024 dimensions. 
