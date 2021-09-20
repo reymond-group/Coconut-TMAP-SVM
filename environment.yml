@@ -177,7 +177,7 @@ dependencies:
     - jaraco-collections==3.0.0
     - jaraco-functools==3.0.0
     - jaraco-text==3.2.0
-    - map4==1.0
+    - git+https://github.com/reymond-group/map4@v1.0
     - mhfp==1.9.2
     - more-itertools==8.2.0
     - pandarallel==1.4.8
