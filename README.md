@@ -3,6 +3,8 @@
 ![The Natural Product Atlas MAP4 TMAP](https://cloud-new.gdb.tools/s/swpqf2ctk5Jf4n2/preview)
 [The COCONUT microbial and plants natural products MAP4 TMAP](https://tm.gdb.tools/map4/coconut_tmap/) colored by plant (in green), fungal (in blue) or bacterial (in orange) origin.
 
+After cloning the repo:
+- cat data/COCONUT_DB.sdf.gz.part-* | gunzip -d -c > data/COCONUT_DB.sdf
 
 ## Jupyter Notebook Description:
 
