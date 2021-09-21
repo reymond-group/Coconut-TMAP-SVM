@@ -5,6 +5,8 @@
 
 After cloning the repo:
 - cat data/COCONUT_DB.sdf.gz.part-* | gunzip -d -c > data/COCONUT_DB.sdf
+- cat data/MAP4-SVM-coconut.all.pkl.gz-part-* | gunzip -d -c > data/MAP4-SVM-coconut.all.pkl
+
 
 ## Jupyter Notebook Description:
 
@@ -41,6 +43,8 @@ The resulting TMAP can be found [here](https://tm.gdb.tools/map4/coconut_tmap/).
 
 The MAP4, ECFP4, and the RDKit AP fingerprints and a set of 11 properties (MW, fraction of sp3 C, HBD and HBA count, AlogP, number of carbons, oxygen, and nitrogens, total number of atoms, number of bonds, and TPSA) were used to train four different SVM classifiers in a 5-fold cross valiadation. For all classifiers the class weights were inversely proportional to the class frequency, and the hyperparameters were optimized using 10% of the available data to maximaze the balance accuracy (Table 4). For the properties SVM, the 11 values were scaled to zero mean and unit variance. All classifiers were implemented using [scikit-learn](https://scikit-learn.org/) with the “one versus rest” strategy. 
 
+
+### 5. test and use the MAP4 classifier in Python
 
 ### required environment installation:
 - `conda env create -f environment.yml`
